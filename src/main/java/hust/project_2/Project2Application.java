@@ -1,4 +1,4 @@
-package hust.project2;
+package hust.project_2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
