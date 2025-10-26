@@ -21,7 +21,7 @@ import org.springframework.security.web.SecurityFilterChain;
 @EnableMethodSecurity
 public class SecurityConfig {
 
-    private final String[] PUBLIC_ENDPOINTS = {"/auth/register", "/auth/login", "/auth/introspect", "/auth/logout", "/auth/refresh", "hello"};
+    private final String[] PUBLIC_ENDPOINTS = {"auth/register", "auth/login", "auth/introspect", "auth/logout", "auth/refresh"};
 
     @NonFinal
     @Value("${jwt.signerKey}")

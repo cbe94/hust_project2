@@ -1,5 +1,6 @@
 package hust.project_2.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
@@ -24,6 +25,12 @@ public class User {
     String firstName;
     String lastName;
     LocalDate dob;
+
+    @ManyToMany
+    Set<User> friends;
+
+    @ManyToMany
+    Set<User> blocked;
 
     @ManyToMany
     Set<Role> roles;
